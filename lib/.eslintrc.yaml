@@ -43,6 +43,7 @@ rules:
         - prepareStackTrace
         - stackTraceLimit
     - name: EvalError
+    - name: FinalizationRegistry
     - name: Float32Array
     - name: Float64Array
     - name: Function
@@ -80,6 +81,8 @@ rules:
     - name: Uint8ClampedArray
     - name: URIError
     - name: WeakMap
+      into: Safe
+    - name: WeakRef
       into: Safe
     - name: WeakSet
       into: Safe
